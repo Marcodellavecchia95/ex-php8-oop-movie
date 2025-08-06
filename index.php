@@ -1,34 +1,15 @@
-<?php class Movie
-{
-    public $name;
-    public $date;
-    public $director;
+<?php
+
+require_once("./models/Genre.php");
+require_once("./models/Movie.php");
 
 
 
-    function __construct($name, $date, $director)
-    {
-        $this->name = $name;
-        $this->date = $date;
-        $this->director = $director;
-    }
 
 
 
-    public function getMovie()
-    {
-        return "$this->name,  $this->date,  $this->director";
-    }
-}
 
-class Genre
-{
-    public $name;
-    public $description;
-}
 
-$inception = new Movie("Inception", 2010, "Christopher Nolan");
-$tre_uomini_e_una_gamba = new Movie("Tre uomini e una gamba", 1997, "Massimo Venier");
 
 ?>
 
@@ -43,11 +24,9 @@ $tre_uomini_e_una_gamba = new Movie("Tre uomini e una gamba", 1997, "Massimo Ven
 </head>
 
 <body>
-    <?php
 
-    echo $inception->getMovie();
-    echo "<br>";
-    echo $tre_uomini_e_una_gamba->getMovie(); ?>
+
+
 </body>
 
 </html>
